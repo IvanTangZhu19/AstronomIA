@@ -66,6 +66,8 @@ Se comparan métricas como **accuracy**, **precision**, **recall** y **F1-score*
 
 El modelo final se integró y desplegó en una aplicación interactiva con **Streamlit**, permitiendo al usuario ingresar valores de las variables fotométricas y obtener la predicción del tipo de objeto.  
 
+Enlace del despliegue en Streamlit: https://astronom-ia.streamlit.app/
+
 El flujo de despliegue incluye:  
 
 - Pipeline de preprocesamiento + modelo entrenado.  
