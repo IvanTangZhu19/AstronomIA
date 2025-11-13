@@ -51,7 +51,7 @@ def remove_outliers(X):
 import pickle
 filename = 'pipeline_modelo.pkl'
 pipeline_model, labelencoder = pickle.load(open(filename, 'rb'))
-pipeline_model
+#pipeline_model
 
 #Cargamos los datos futuros
 # data = pd.read_csv("datos_futuro.csv")
@@ -67,7 +67,7 @@ u = st.slider('Filtro ultravioleta (u)', min_value=0.0, max_value=30.0, value=20
 g = st.slider('Filtro verde (g)', min_value=0.0, max_value=30.0, value=20.0, step=0.00001)
 r = st.slider('Filtro rojo (r)', min_value=0.0, max_value=30.0, value=20.0, step=0.00001)
 i = st.slider('Filtro infrarrojo cercano (i)', min_value=0.0, max_value=30.0, value=20.0, step=0.00001)
-z = st.slider('Filtro infrarrojo (i)', min_value=0.0, max_value=30.0, value=20.0, step=0.00001)
+z = st.slider('Filtro infrarrojo (z)', min_value=0.0, max_value=30.0, value=20.0, step=0.00001)
 redshift = st.slider('Corregimiento al rojo', min_value=0.0, max_value=7.0, value=3.0, step=0.00001)
 
 #Dataframe
