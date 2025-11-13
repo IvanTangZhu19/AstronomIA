@@ -68,7 +68,7 @@ g = st.slider('Filtro verde (g)', min_value=0.0, max_value=30.0, value=20.0, ste
 r = st.slider('Filtro rojo (r)', min_value=0.0, max_value=30.0, value=20.0, step=0.00001)
 i = st.slider('Filtro infrarrojo cercano (i)', min_value=0.0, max_value=30.0, value=20.0, step=0.00001)
 z = st.slider('Filtro infrarrojo (z)', min_value=0.0, max_value=30.0, value=20.0, step=0.00001)
-redshift = st.slider('Corregimiento al rojo (redshift)', min_value=-0.1, max_value=7.0, value=3.0, step=0.0000001)
+redshift = st.slider('Corregimiento al rojo (redshift)', min_value=-0.1, max_value=7.0, value=3.0, step=0.00001, format="%.5f")
 
 #Dataframe
 datos = [[u, g, r, i, z, redshift]]
