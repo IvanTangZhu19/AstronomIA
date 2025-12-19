@@ -64,7 +64,7 @@ Se implementaron y compararon los siguientes algoritmos de clasificación:
 | 🌳 **Árbol de Decisión** | Modelo interpretable basado en reglas jerárquicas. |
 | 📍 **K-Nearest Neighbors (KNN)** | Clasifica según la cercanía a los ejemplos más similares. |
 | 🧩 **Red Neuronal Artificial (MLPClassifier)** | Modelo de capas densas para capturar relaciones no lineales. |
-| 🧱 **Métodos de Ensamble** | Combina varios clasificadores (Random Forest, Gradient Boosting) para mejorar la precisión. |
+| 🧱 **Métodos de Ensamble** | Combina varios clasificadores (Random Forest, Bagging y XGBoost) para mejorar la precisión. |
 
 Se comparan métricas como **accuracy**, **precision**, **recall** y **F1-score** para determinar el mejor desempeño.
 
