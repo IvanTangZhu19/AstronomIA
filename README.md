@@ -2,12 +2,13 @@
 <p align="center">
   <img align="center" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" width="100"/>
   <img align="center" src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" width="130"/>
+  <img align="center" src="https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" width="120"/>
 </p>
 <p align="center">
   <img align="center" src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" width="100"/>
+  <img align="center" src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="Numpy" width="100"/>
   <img align="center" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" width="130"/>
   <img align="center" src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black" alt="Matplotlib" width="110"/>
-  <img align="center" src="https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" width="120"/>
 </p>
 
 Este proyecto utiliza **modelos de aprendizaje automático** para clasificar objetos astronómicos (estrellas, galaxias y cuásares) a partir de datos del **Sloan Digital Sky Survey (SDSS)**.  
@@ -50,9 +51,11 @@ El conjunto de datos contiene observaciones astronómicas con las siguientes var
 2. **Validación cruzada:**  
    - Se aplica una **validación cruzada k-fold** para asegurar la robustez del modelo y evitar sobreajuste.  
 
-3. **Preprocesamiento con Pipelines:**  
-   - Estandarización de variables numéricas.  
-   - Codificación de variables categóricas (si aplica).  
+3. **Pipelines con preprocesamiento y modelo:**  
+   - Eliminar valores atípicos
+   - Imputación de nulos por la media y moda
+   - Estandarización de variables numéricas (Normalización - si aplica. En este caso no aplica al ser el modelo definitivo un Árbol de decisión).  
+   - Codificación de variables categóricas (No aplica al no haber variables categóricas).  
    - Integración del modelo en un **pipeline de scikit-learn** para automatizar el flujo de entrenamiento y predicción.  
 
 ---
@@ -66,7 +69,7 @@ Se implementaron y compararon los siguientes algoritmos de clasificación:
 | 🌳 **Árbol de Decisión** | Modelo interpretable basado en reglas jerárquicas. |
 | 📍 **K-Nearest Neighbors (KNN)** | Clasifica según la cercanía a los ejemplos más similares. |
 | 🧩 **Red Neuronal Artificial (MLPClassifier)** | Modelo de capas densas para capturar relaciones no lineales. |
-| 🧱 **Métodos de Ensamble** | Combina varios clasificadores (Random Forest, Bagging y XGBoost) para mejorar la precisión. |
+| 🧱 **Métodos de Ensamble** | Combina varios clasificadores (Random Forest, Bagging y XGBoost) |
 
 Se comparan métricas como **accuracy**, **precision**, **recall** y **F1-score** para determinar el mejor desempeño.
 
